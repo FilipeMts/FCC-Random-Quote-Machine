@@ -1,5 +1,4 @@
-# freeCodeCamp Front End Libraries Projects: 
-# Random Quote Machine
+# FCC Front End Libraries Projects: Random Quote Machine
 
 In late-2018 / early-2019 I went through freeCodeCamp’s Frontend curriculum while working full-time in a non-programming job. 
 
