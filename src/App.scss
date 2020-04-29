@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Roboto:wght@300&display=swap');
+
+$main-color: #7F8688;
+$second-color: #929D9E;
+$third-color: #F3E367;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-color;
+
+  #quote-box {
+    margin: 0 auto;
+    width: 90%;   
+
+    .display_quote {
+      width: 100%;
+      padding: 1em;
+      min-height: 300px;
+      background-color: $second-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      #text {
+        font-family: 'Lora';
+        font-size: 7vw;
+        color: $third-color;
+      }
+
+      #author {
+        margin-top: 1em;
+        font-family: "Roboto", Verdana, sans-serif;
+        font-size: 4vw;
+        color: $third-color;
+      }
+    }
+
+    .display_buttons {
+      width: 100%;
+      height: 100px;
+      padding: 0 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $second-color;
+
+      a, button {
+        height: 35%;
+      }
+
+      a {
+        text-decoration: none; 
+        display: flex;
+        align-items: center;
+        
+        .fab {
+          font-size: 2em;
+          color: $third-color;
+          transition: all 1s ease 0s;
+
+          &:hover{
+            transition: all 1s ease 0s;
+            color: $main-color;
+          }
+        }
+      }
+
+      button {
+        width: 6em;
+        background-color: $third-color;
+        border: 1px solid $main-color;
+        font-family: "Roboto", Tahoma, sans-serif;
+        font-weight: bold;
+        color: $main-color;
+        cursor: pointer;
+        transition: all 1s ease 0s;
+        outline: none;
+
+        &:hover {
+          border-radius: 50px;
+          transition: all 1s ease 0s;
+          background-color: $main-color;
+          color: $third-color;
+        }
+      }
+    }
+
+    .code {
+      width: 100%;
+      text-align: center;
+      
+      a {
+        text-decoration: none;
+        font-family: "Roboto", Tahoma, sans-serif;
+        font-size: .75em;
+        color: $third-color;
+      }    
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .App {
+    #quote-box {    
+      width: 600px;
+
+      .display_quote {
+        #text {
+          font-size: 2em;
+        }
+  
+        #author {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
