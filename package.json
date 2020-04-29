@@ -1,6 +1,6 @@
 {
   "name": "01_random_quote_machine",
-  "homepage": "https://filipemts.github.io/random-quote-machine",
+  "homepage": "https://filipemts.github.io/FCC-Random-Quote-Machine/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
